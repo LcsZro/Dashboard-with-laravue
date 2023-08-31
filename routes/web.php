@@ -30,8 +30,8 @@ Route::middleware(['auth', 'verified'])->group(function(){
         return Inertia::render('Dashboard');
     })->name('dashboard');
 
-    Route::resource('/skills', SkillController::class);
-    Route::resource('/projects', ProjectController::class);
+    Route::resource('/skills', \App\Http\Controllers\SkillController::class);
+    Route::resource('/projects', \App\Http\Controllers\ProjectController::class);
 });
 
 Route::middleware('auth')->group(function () {
