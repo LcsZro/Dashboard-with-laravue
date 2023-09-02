@@ -7,7 +7,6 @@ use Inertia\Inertia;
 use Illuminate\Support\Facades\Redirect;
 use App\Models\Skill;
 
-
 class SkillController extends Controller
 {
     /**
