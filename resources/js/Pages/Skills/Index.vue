@@ -53,7 +53,7 @@
                                     {{ skill.name }}
                                 </td>
                                 <td class="px-6 py-4">
-                                   <img :src="skill.image">
+                                   <img :src="skill.image" class="w-12 h-12 rounded">
                                 </td>
                                 <td class="px-6 py-4">
                                     edit/delete 
@@ -62,7 +62,6 @@
                         </tbody>
                     </table>
                 </div>
-
             </div>
         </div>
     </AuthenticatedLayout>
