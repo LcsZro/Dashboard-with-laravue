@@ -6,9 +6,15 @@
     import PrimaryButton from '@/Components/PrimaryButton.vue';
     import TextInput from '@/Components/TextInput.vue';
 
+    defineProps({
+        skills: Array
+    })
+
     const form = useForm({
         name: "",
         image: null,
+        skill_id: '',
+        project_url: ''
     });
 
     const submit = () => {
@@ -28,6 +34,19 @@
         <div class="mt-2">
             <div class="max-w-md mx-auto sm:px-6 lg:px-8">
                 <form @submit.prevent="submit">
+                    <div>
+                        <select class="mt-1 block w-full pl-3 pr-10 py-2
+                                text-base border-gray-300 
+                                focus:outline-none 
+                                focus:ring-indigo-500 
+                                focus:border-indigo-500 
+                                sm:text-sm rounded-md"
+                            v-model="form.skill_id" id="skill_id" name="skill_id">
+                            <option v-for="skill in skills" :key="skill.id" value="skill.id">
+                                {{ skill.name }}
+                            </option>
+                        </select>
+                    </div>
                     <div>
                         <InputLabel for="name" value="Name" />
 
@@ -52,9 +71,7 @@
                             type="text"
                             class="mt-1 block w-full"
                             v-model="form.name"
-                            required
-                            autofocus
-                            autocomplete="username"
+                            autocomplete="projecturl"
                         />
 
                         <InputError class="mt-2" :message="form.errors.project_url" />
