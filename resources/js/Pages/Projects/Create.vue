@@ -35,8 +35,7 @@
             <div class="max-w-md mx-auto sm:px-6 lg:px-8">
                 <form @submit.prevent="submit">
                     <div>
-                        <select 
-                            class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500  focus:border-indigo-500 sm:text-sm rounded-md"
+                        <select class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500  focus:border-indigo-500 sm:text-sm rounded-md"
                             v-model="form.skill_id" id="skill_id" name="skill_id">
                             <option v-for="skill in skills" :key="skill.id" value="skill.id">
                                 {{ skill.name }}
@@ -66,7 +65,7 @@
                             id="project_url"
                             type="text"
                             class="mt-1 block w-full"
-                            v-model="form.name"
+                            v-model="form.project_url"
                             autocomplete="projecturl"
                         />
 
