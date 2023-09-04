@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Redirect;
 use App\Models\Skill;
+use App\Models\Project; 
+use App\Http\Resources\ProjectResource;
 
 class ProjectController extends Controller
 {
@@ -14,7 +16,8 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Projects/Index');
+        $projects = ProjectResource::collection(Project::all());
+        return Inertia::render('Projects/Index', compact('projects'));
     }
 
     /**

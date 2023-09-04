@@ -1,6 +1,10 @@
 <script setup>
     import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
     import { Head, Link } from '@inertiajs/vue3';
+
+    defineProps({
+        projects: Object,
+    })
 </script>
 
 <template>

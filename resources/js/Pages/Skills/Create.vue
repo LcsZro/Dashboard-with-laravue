@@ -45,17 +45,34 @@
                     </div>
 
                     <div>
+                        <InputLabel for="name" value="Name" />
+
+                        <TextInput
+                            id="name"
+                            type="text"
+                            class="mt-1 block w-full"
+                            v-model="form.name"
+                            required
+                            autofocus
+                            autocomplete="username"
+                        />
+
+                        <InputError class="mt-2" :message="form.errors.name" />
+                    </div>
+
+                    
+                    <div>
                         <InputLabel for="image" value="Image" />
 
                         <TextInput
                             id="image"
                             type="file"
                             class="mt-1 block w-full"
-                            @input="form.image = $event.target.files[0]"        
+                            @input="form.image = $event.target.files[0]"
                         />
 
                         <InputError class="mt-2" :message="form.errors.image" />
-                    </div>
+                    </div> 
 
                     <div class="flex items-center justify-end mt-4">
                         <PrimaryButton class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
