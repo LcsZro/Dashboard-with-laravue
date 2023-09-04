@@ -43,24 +43,7 @@
 
                         <InputError class="mt-2" :message="form.errors.name" />
                     </div>
-
-                    <div>
-                        <InputLabel for="name" value="Name" />
-
-                        <TextInput
-                            id="name"
-                            type="text"
-                            class="mt-1 block w-full"
-                            v-model="form.name"
-                            required
-                            autofocus
-                            autocomplete="username"
-                        />
-
-                        <InputError class="mt-2" :message="form.errors.name" />
-                    </div>
-
-                    
+            
                     <div>
                         <InputLabel for="image" value="Image" />
 
