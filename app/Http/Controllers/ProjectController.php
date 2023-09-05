@@ -38,6 +38,7 @@ class ProjectController extends Controller
             'image' => ['required', 'image'],
             'name' => ['required', 'min:3'],
             'skill_id' => ['required'],
+            'project_url' => ['required', 'url']
         ]);
 
         if($request->hasFile('image')){ 
