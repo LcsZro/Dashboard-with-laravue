@@ -40,9 +40,8 @@ class ProjectController extends Controller
             'skill_id' => ['required'],
         ]);
 
-        if($request->hasFile('image')){
+        if($request->hasFile('image')){ 
             $image = $request->file('image')->store('projects');
-
             Project::create([
                 'skill_id' => $request->skill_id,
                 'name' => $request->name,

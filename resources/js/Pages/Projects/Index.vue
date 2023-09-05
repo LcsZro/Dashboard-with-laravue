@@ -5,6 +5,7 @@
     defineProps({
         projects: Object,
     })
+
 </script>
 
 <template>

@@ -13,12 +13,12 @@ defineEmits(['update:modelValue']);
 const input = ref(null);
 
 onMounted(() => {
-    if (input.value.hasAttribute('autofocus')) {
+    if (input.value && input.value.hasAttribute('autofocus')) { // Verifique se input.value não é nulo
         input.value.focus();
     }
 });
 
-defineExpose({ focus: () => input.value.focus() });
+defineExpose({ focus: () => input.value && input.value.focus() }); // Verifique se input.value não é nulo
 </script>
 
 <template>
