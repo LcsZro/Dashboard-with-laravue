@@ -7,6 +7,8 @@ use Inertia\Inertia;
 use Illuminate\Support\Facades\Redirect;
 use App\Models\Skill;
 use App\Http\Resources\SkillResource;
+use Illuminate\Support\Facades\Storage;
+
 
 class SkillController extends Controller
 {
@@ -69,9 +71,25 @@ class SkillController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Skill $skill)
     {
-        //
+        $image = $skill->image;
+
+        $request->validate([
+            'name' => ['required', 'min:3']
+        ]);
+
+        if($request->hasFile('image')){
+            Storage::delete($skill->image); 
+            $image = $request->file('image')->store('skills');
+        }
+
+        $skill->update([
+            'name' => $request->name,
+            'image' => $image
+        ]);
+
+        return Redirect::route('skills.index');
     }
 
     /**
