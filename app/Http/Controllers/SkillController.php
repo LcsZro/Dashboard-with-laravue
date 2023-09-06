@@ -55,15 +55,15 @@ class SkillController extends Controller
      */
     public function show(string $id)
     {
-        //
+        
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Skill $skill)
     {
-        //
+        return Inertia::render('Skills/Edit', compact('skill'));
     }
 
     /**
