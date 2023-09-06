@@ -5,27 +5,32 @@
     import InputLabel from '@/Components/InputLabel.vue';
     import PrimaryButton from '@/Components/PrimaryButton.vue';
     import TextInput from '@/Components/TextInput.vue';
+    import { Inertia } from '@inertiajs/inertia';
 
-    defineProps({
+    const props = defineProps({
         skill: Object,
     })
 
     const form = useForm({
-        name: "",
+        name: props.skill?.name,
         image: null,
     });
 
     const submit = () => {
-        form.post(route('skills.store'));
+        Inertia.post(`/skills/${props.skill.id}`, {
+            _method: "put", 
+            name: form.name,
+            image: form.image,
+        })
     };
 </script>
 
 <template>
-    <Head title="New Skill" />
+    <Head title="Edit Skill" />
     <AuthenticatedLayout>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-                New Skill
+                Edit Skill
             </h2>
         </template>
 
