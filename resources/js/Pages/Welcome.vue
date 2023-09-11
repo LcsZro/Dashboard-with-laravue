@@ -6,7 +6,7 @@ import Frontend from '@/Layouts/Frontend.vue';
 
 <template>
     <Head title="Welcome to portfolio" />
-    <Frontend></Frontend>
+    <Frontend/>
 </template>
 
 

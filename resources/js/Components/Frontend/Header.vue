@@ -1,68 +1,43 @@
-<script setup>
-    import { ref } from 'vue';
-    const showMobileMenu = ref(false);
-
-    const toggleMobileMenu = () => {
-        showMobileMenu.value = !showMobileMenu.value;
-    }
-</script>
-
 <template> 
-    <div>
-        <nav class="bg-white dark:bg-gray-800 shadow">
-            <div class="px-8 mx-auto max-w-7xl">
-                <div class="flex items-center justify-between h-16">
-                    <div class="w-full justify-between flex items-center">
-                        <a class="flex-shrink-0" href="/">
-                            <img class="w-8 h-8" src="/icons/rocket.svg" alt="Logo"/>
-                        </a>
-                        <div class="hidden md:block">
-                            <div class="flex items-baseline ml-10 space-x-4">
-                                <a class="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/#">
-                                    Home
-                                </a>
-                                <a class="text-gray-800 dark:text-white  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/#">
-                                    Gallery
-                                </a>
-                                <a class="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/#">
-                                    Content
-                                </a>
-                                <a class="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/#">
-                                    Contact
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div class="flex items-center ml-4 md:ml-6">
-                        </div>
-                    </div>
-                    <div class="flex -mr-2 md:hidden">
-                        <button @click="toggleMobileMenu" class="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none">
-                            <svg width="20" height="20" fill="currentColor" class="w-8 h-8" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z">
-                                </path>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="md:hidden" v-if="showMobileMenu">
-                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                    <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
-                        Home
-                    </a>
-                    <a class="text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
-                        About
-                    </a>
-                    <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
-                        Projects
-                    </a>
-                    <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
-                        Contact
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </div>
-</template>
+    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+         <!-- Logo à esquerda -->
+         <div class="flex items-center flex-shrink-0 text-white mr-6">
+             <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+             <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
+         </div>
+         <!-- Botão do menu à direita -->
+         <div class="block lg:hidden">
+             <button class="flex items-center px-3 py-2 border rounded text-xl text-white border-teal-400 hover:text-white hover:border-white" @click="toggleMobileMenu">
+                 <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+             </button>
+         </div>
+         <!-- Itens de menu -->
+         <div class="w-full lg:flex lg:items-center lg:w-auto" :class="{ 'hidden': !showMobileMenu }">
+             <div class="text-lg lg:flex-grow">
+                 <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+                     Docs
+                 </a>
+                 <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+                     Examples
+                 </a>
+                 <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+                     Blog
+                 </a>
+                 <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white">
+                     Blog
+                 </a>
+             </div>
+         </div>
+     </nav>
+ </template>
+ 
+ <script setup>
+     import { ref } from 'vue';
+ 
+     const showMobileMenu = ref(false);
+ 
+     const toggleMobileMenu = () => {
+         showMobileMenu.value = !showMobileMenu.value;
+     }
+ </script>
+ 
