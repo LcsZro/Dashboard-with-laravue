@@ -36,7 +36,7 @@
         @apply bg-light-secundary dark:bg-dark-secundary text-paragraph h-[60px] outline-none pl-6 w-full font-bold text-[15px] rounded-lg;    
     }
     .textarea{
-        @apply bg-light-secundary dark:bg-dark-secundary resize-none w-full outline-none p6 rounded-lg focus:outline
+        @apply bg-light-secundary dark:bg-dark-secundary resize-none w-full outline-none pl-6 rounded-lg focus:outline
     }
     .active{
         @apply text-accent;
