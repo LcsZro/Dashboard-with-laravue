@@ -2,11 +2,11 @@
     <nav class="flex items-center justify-between flex-wrap bg-[#242424] p-6">
             <!-- Logo à esquerda -->
             <div class="flex items-center flex-shrink-0 text-white mr-6">
-                <img class="w-28" src="https://a.storyblok.com/f/248205/440x250/8c8b00c03a/logo.png?cv=1694461402429">
+                <h2 class="font-semibold text-xl tracking-tight text-[#69B42D] dark:text-white">Portfólio</h2>
             </div>
             <!-- Botão do menu à direita -->
             <div class="block lg:hidden">
-                <button class="flex items-center px-3 py-2 border rounded text-xl text-white border-white hover:text-white hover:border-white" @click="toggleMobileMenu">
+                <button class="flex items-center px-3 py-2 border rounded text-xl text-white border-[#68B42D] hover:text-white hover:border-white" @click="toggleMobileMenu">
                     <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                 </button>
             </div>

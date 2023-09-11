@@ -1,6 +1,6 @@
 <script setup>
     import Header from '@/Components/Frontend/Header.vue';
-    import Footer from '@/Components/Frontend/FooterComponent.vue';
+    import FooterComponent from '@/Components/Frontend/FooterComponent.vue';
 </script>
 
 <template>
@@ -11,6 +11,6 @@
             <slot/>
         </main>
         <!--Footer-->
-        <Footer/>
+        <FooterComponent/>
     </div>
 </template>
