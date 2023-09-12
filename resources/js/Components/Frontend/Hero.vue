@@ -21,7 +21,7 @@
                     </button>
                 </div>
                 <div class="hidden lg:flex flex-1 justify-end items-end h-full">
-                    <img src="" alt="">
+                    <img class="w-full h-full" src="https://s3.amazonaws.com/a.storyblok.com/f/248205/787x572/0431bbb22a/undraw_programming_re_kg9v.svg?cv=1694536971915" alt="Programming">
                 </div>
             </div>
         </div>
