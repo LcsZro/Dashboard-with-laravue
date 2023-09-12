@@ -1,6 +1,7 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
 const colors = require("tailwindcss/colors");
+import daisyui from 'daisyui';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -47,5 +48,8 @@ export default {
       }
     },
 
-    plugins: [forms],
+    plugins: [
+        forms,
+        daisyui, // Adicione o plugin daisyui à lista de plugins
+    ],
 };

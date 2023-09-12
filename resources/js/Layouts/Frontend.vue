@@ -4,12 +4,13 @@
 </script>
 
 <template>
-    <div class="bg-slate-200 darkmode:bg-slate-900">
+    <div>
         <!--Header-->
         <Header/>
         <main class="min-h-screen">
             <slot/>
         </main>
+
         <!--Footer-->
         <FooterComponent/>
     </div>

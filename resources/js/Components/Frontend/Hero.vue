@@ -16,7 +16,7 @@
                     <p class="pt-4 pb-8 md:pt-6 max-w-[480px] text-lg text-center lg:text-left">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe rem repudiandae deserunt eveniet sapiente minus et. Voluptatum alias, officiis placeat, non voluptate id sapiente voluptates, accusantium quis voluptatem tempora.
                     </p>
-                    <button class="btn btn-md hover:bg-light-secundary md:btn-lg transition-all">
+                    <button class="text-white hover:text-[#68B42D] rounded-md hover:bg-light-secundary md:btn-lg transition-all dark:bg-[#68B42D]">
                         Work With me
                     </button>
                 </div>
