@@ -1,7 +1,7 @@
 <template> 
-    <nav class="flex items-center justify-between flex-wrap bg-[#242424] p-6">
+    <nav class="flex items-start justify-between flex-wrap bg-[#242424] p-6">
             <div class="flex items-center flex-shrink-0 text-white mr-6">
-                <h2 class="font-semibold text-xl tracking-tight text-[#69B42D] dark:text-white">Portfólio</h2>
+                <h2 class="md:ml-12 font-semibold text-xl tracking-tight text-[#69B42D] dark:text-white">Portfólio</h2>
             </div>
             <div class="block lg:hidden">
                 <button class="flex items-center px-3 py-2 border rounded text-xl text-white border-[#68B42D] hover:text-white hover:border-white" @click="toggleMobileMenu">
