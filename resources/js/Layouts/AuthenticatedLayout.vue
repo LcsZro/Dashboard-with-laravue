@@ -6,6 +6,7 @@ import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import { Link } from '@inertiajs/vue3';
+import DarkmodeButton from '../Components/Frontend/ButtonDarkmode.vue';
 
 const showingNavigationDropdown = ref(false);
 </script>
@@ -106,6 +107,9 @@ const showingNavigationDropdown = ref(false);
                                         <DropdownLink :href="route('profile.edit')"> Profile </DropdownLink>
                                         <DropdownLink :href="route('logout')" method="post" as="button">
                                             Log Out
+                                        </DropdownLink>
+                                        <DropdownLink> 
+                                            <DarkmodeButton/>
                                         </DropdownLink>
                                     </template>
                                 </Dropdown>
