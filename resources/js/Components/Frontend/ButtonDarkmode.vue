@@ -6,10 +6,8 @@
 </script>
 
 <template>
-    <button
-        @click="toggleDark()"
-        class="px-4 py-2 text-white bg-gray-600 dark:bg-purple-700"
-    >
-        Dark Toggle
+    <button @click="toggleDark()">
+        <img v-if="isDark" src="../Frontend/Images/newmoon.svg" alt="Dark Image" class="w-6"/>
+        <img v-else src="../Frontend/Images/sun.svg" alt="Light Image" class="w-6"/>
     </button>
 </template>

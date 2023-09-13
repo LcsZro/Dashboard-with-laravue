@@ -30,10 +30,10 @@
                 <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
                     Services
                 </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
                     Projects
                 </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                <a href="#responsive-header">
                     <DarkmodeButton/>
                 </a>
             </div>
