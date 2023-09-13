@@ -21,19 +21,19 @@
         </div>
         <div class="w-full lg:flex lg:items-center lg:w-auto" :class="{ 'hidden': !showMobileMenu }">
             <div class="text-lg lg:flex-grow text-[#68B42D]">
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
+                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 dark:hover:text-white hover:text-slate-700 mr-4">
                     Home
                 </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
+                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 dark:hover:text-white hover:text-slate-700 mr-4">
                     About
                 </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
+                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 dark:hover:text-white hover:text-slate-700 mr-4">
                     Services
                 </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
+                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 dark:hover:text-white hover:text-slate-700 mr-4">
                     Projects
                 </a>
-                <a href="#responsive-header">
+                <a href="#responsive-header" class="">
                     <DarkmodeButton/>
                 </a>
             </div>
