@@ -1,5 +1,16 @@
+<script setup>
+    import { ref } from 'vue';
+    import DarkmodeButton from '../Frontend/ButtonDarkmode.vue' 
+
+    const showMobileMenu = ref(false);
+ 
+    const toggleMobileMenu = () => {
+        showMobileMenu.value = !showMobileMenu.value;
+    }
+</script>
+ 
 <template> 
-    <nav class="flex items-start justify-between flex-wrap bg-[#242424] p-6">
+    <nav class="flex items-start justify-between flex-wrap bg-[#E5E7EB] dark:bg-[#242424] p-6">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
             <h2 class="md:ml-12 font-semibold text-xl tracking-tight text-[#69B42D] dark:text-white">Portfólio</h2>
         </div>
@@ -22,18 +33,11 @@
                 <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
                     Projects
                 </a>
+                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                    <DarkmodeButton/>
+                </a>
             </div>
         </div>
     </nav>
 </template>
- 
-<script setup>
-    import { ref } from 'vue';
- 
-    const showMobileMenu = ref(false);
- 
-    const toggleMobileMenu = () => {
-        showMobileMenu.value = !showMobileMenu.value;
-    }
-</script>
  

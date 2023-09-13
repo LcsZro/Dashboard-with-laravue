@@ -1,9 +1,10 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
+const defaultTheme = require('tailwindcss/defaultTheme');
 import forms from '@tailwindcss/forms';
 const colors = require("tailwindcss/colors");
 
 /** @type {import('tailwindcss').Config} */
 export default {
+    darkMode: "class",
     content: [
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',

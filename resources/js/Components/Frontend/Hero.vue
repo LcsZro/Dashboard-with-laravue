@@ -16,7 +16,7 @@
                     <p class="pt-4 pb-8 md:pt-6 max-w-[480px] text-lg text-center lg:text-left">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe rem repudiandae deserunt eveniet sapiente minus et. Voluptatum alias, officiis placeat, non voluptate id sapiente voluptates, accusantium quis voluptatem tempora.
                     </p>
-                    <button class="py-4 px-5 font-medium text-slate-700 dark:text-white flex items-center justify-center rounded-lg hover:text-[#68B42D] hover:bg-white bg-[#68B42D] transition-all lg:h-[55px] md:h-[48px]">
+                    <button class="py-4 px-5 font-medium text-slate-700 dark:text-white flex items-center justify-center rounded-lg hover:text-slate-700 hover:bg-[#68b42dc2] bg-[#68B42D] transition-all lg:h-[55px] md:h-[48px]">
                         Work With me
                     </button>
                 </div>
