@@ -1,6 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 import forms from '@tailwindcss/forms';
 const colors = require("tailwindcss/colors");
+const siraUi = require('@sira-ui/tailwind');
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -50,5 +51,6 @@ export default {
 
     plugins: [
         forms,
+        siraUi,
     ],
 };

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <section id="home" class="lg:h-[85vh] flex items-center bg-light-primary py-32 lg:py-0 overflow-hidden dark:bg-[#121212]">
+    <section id="home" class="lg:h-[85vh] flex items-center py-32 lg:py-0 overflow-hidden dark:bg-[#121212]">
         <div class="container mx-auto h-full">
             <div class="flex items-center h-full pt-8"> 
                 <div class="flex-1 flex flex-col items-center lg:items-start"> 
