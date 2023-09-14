@@ -13,12 +13,14 @@ defineProps({
 
 <template>
     <Head title="Welcome to portfolio" />
-    <FrontendLayout>
-        <Hero/>
-        <About/> 
-        <Skills :skills="skills" />
-        <Projects :skills="skills" :projects="projects" />
-    </FrontendLayout>
+    <html>
+        <FrontendLayout>
+            <Hero/>
+            <About/>
+            <Skills :skills="skills" />
+            <Projects :skills="skills" :projects="projects" />
+        </FrontendLayout>
+    </html>
 </template>
 
 

@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+    html{
+        @apply bg-white dark:bg-[#121212];
+    },
     body {
         @apply font-body text-paragraph leading-6 bg-gray-200;
     }

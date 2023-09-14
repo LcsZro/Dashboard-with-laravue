@@ -6,7 +6,7 @@
 </script>
 
 <template>
-    <section class="dark:bg-[#242424] ">
+    <section>
         <div class="container mx-auto">
             <div class="grid grid-cols-8 md:grid-flow-col">
                 <div class="flex items-center justify-center p-4" v-for="skill in skills.data" :key="skill.id">
