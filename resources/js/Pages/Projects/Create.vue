@@ -14,7 +14,8 @@
         name: "",
         image: null,
         skill_id: "",
-        project_url: ""
+        project_url: "",
+        description: ""
     });
 
     const submit = () => {
@@ -47,6 +48,7 @@
                         </select>
                         <InputError class="mt-2" :message="form.errors.skill_id" />
                     </div>
+
                     <div>
                         <InputLabel for="name" value="Name" />
                         <TextInput
@@ -72,6 +74,19 @@
                         />
 
                         <InputError class="mt-2" :message="form.errors.project_url" />
+                    </div>
+
+                    <div>
+                        <InputLabel for="description" value="Description" />
+                        <TextInput
+                            id="description"
+                            type="text"
+                            class="mt-1 block w-full"
+                            v-model="form.description"
+                            autofocus
+                            autocomplete="description"
+                        />
+                        <InputError class="mt-2" :message="form.errors.description" />
                     </div>
 
                     <div>

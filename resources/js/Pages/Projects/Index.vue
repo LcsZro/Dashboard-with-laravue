@@ -43,6 +43,9 @@
                                 <th scope="col" class="px-6 py-3">
                                     Image
                                 </th>   
+                                <th scope="col" class="px-6 py-3">
+                                    Description
+                                </th>  
                             </tr>
                         </thead>
                         <tbody>
@@ -58,6 +61,11 @@
                                 </td>
                                 <td class="px-6 py-4">
                                    <img :src="project.image" class="w-12 h-12 rounded">
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div id="outputText" class="p-2 rounded-lg">
+                                        {{ project.description }}
+                                    </div>
                                 </td>
                                 <td class="px-6 py-4">
                                     <Link 
