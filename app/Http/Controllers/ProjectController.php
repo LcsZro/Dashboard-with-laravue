@@ -51,7 +51,7 @@ class ProjectController extends Controller
                 'image' => $image,
                 'project_url' => $request->project_url,
                 'description' => $request->description,
-                'selectedSkills' => $request->selectedSkills
+                'selectedSkills' => json_encode($request->selectedSkills)
             ]);
 
             return Redirect::route('projects.index')->with('message', 'Project Created Sucessfully');

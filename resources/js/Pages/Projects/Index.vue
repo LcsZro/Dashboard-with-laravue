@@ -69,7 +69,7 @@
                                    {{ project.description }}
                                 </td>
                                 <td class="px-6 py-4">
-                                   {{ project.hashtags }}
+                                   {{ project.selectedSkills }}
                                 </td>
                                 <td class="px-6 py-4">
                                     <Link 

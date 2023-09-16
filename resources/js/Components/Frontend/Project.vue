@@ -25,9 +25,7 @@
           </p>
         </div>
         <div class="flex flex-wrap gap-2">
-          <span class="badge light info"> Design </span>
-          <span class="badge light primary"> Product </span>
-          <span class="badge light danger"> Developer </span>
+            <span v-for="skill in project.selectedSkills" class="badge light info" :key="skill">{{ skill }}</span>
         </div>
       </div>
     </div>
