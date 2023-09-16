@@ -18,7 +18,7 @@
       </div>
       <div class="p-4 flex flex-col gap-2">
         <a :href="project.project_url" class="group flex-col items-center text-center cursor-pointer">
-          <h3 class="text-xl font-semibold">{{ project.skill.name }}</h3>
+          <h3 class="text-xl font-semibold">{{ project.name }}</h3>
         </a>
         <div class="text-sm">
           <p class="dark:text-white">
