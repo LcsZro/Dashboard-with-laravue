@@ -51,7 +51,7 @@ class ProjectController extends Controller
                 'image' => $image,
                 'project_url' => $request->project_url,
                 'description' => $request->description,
-                'selectedSkills' => json_encode($request->selectedSkills)
+                'selectedSkills' => $request->selectedSkills
             ]);
 
             return Redirect::route('projects.index')->with('message', 'Project Created Sucessfully');
@@ -87,7 +87,7 @@ class ProjectController extends Controller
             'name' => ['required', 'min:3'],
             'skill_id' => ['required'],
             'description' => ['nullable', 'max:240'],
-            'selectedSkills' => implode(', ', $request->selectedSkills)
+            'selectedSkills' => $request->selectedSkills
         ]);
         if($request->hasFile('image')){
             Storage::delete($project->image);
@@ -99,7 +99,7 @@ class ProjectController extends Controller
             'skill_id' => $request-> skill_id,
             'project_url' => $request-> project_url,
             'image' => $image,
-            'selectedSkills' => $request->selectedSkills ?? []
+            'selectedSkills' => json_encode($request->selectedSkills)
         ]);
 
         return Redirect::route('projects.index');
