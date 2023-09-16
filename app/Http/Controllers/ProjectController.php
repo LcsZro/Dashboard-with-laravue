@@ -99,7 +99,7 @@ class ProjectController extends Controller
             'skill_id' => $request-> skill_id,
             'project_url' => $request-> project_url,
             'image' => $image,
-            'selectedSkills' => implode(', ', $request->selectedSkills)
+            'selectedSkills' => $request->selectedSkills ?? []
         ]);
 
         return Redirect::route('projects.index');

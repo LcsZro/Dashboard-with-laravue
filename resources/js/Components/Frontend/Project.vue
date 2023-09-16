@@ -4,6 +4,7 @@
     defineProps({
         project: Object,
     })
+    
 </script>
 
 <template>
@@ -25,7 +26,7 @@
           </p>
         </div>
         <div class="flex flex-wrap gap-2">
-            <span v-for="skill in project.selectedSkills" class="badge light info" :key="skill">{{ skill }}</span>
+          <span class="badge light info" v-for="skill in project.selectedSkills" :key="skill">{{ skill }}</span>
         </div>
       </div>
     </div>
