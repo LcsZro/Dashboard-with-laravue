@@ -16,7 +16,8 @@
         name: props.project?.name,
         image: null,
         skill_id: props.project?.skill_id,
-        project_url: props.project?.project_url
+        project_url: props.project?.project_url,
+        description: props.project?.description
     });
 
     const submit = () => {
@@ -25,7 +26,8 @@
             name: form.name,
             image: form.image,
             skill_id: form.skill_id,
-            project_url: form.project_url
+            project_url: form.project_url,
+            description: form.description,
         })
     };
 </script>

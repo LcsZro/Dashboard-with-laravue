@@ -92,7 +92,7 @@
                     </div>
 
                     <div>
-                        <InputLabel for="skill_id" value="Skills" />
+                        <InputLabel for="selectedSkills" value="Hashtags" />
                         <div class="mt-1 space-y-2">
                             <template v-for="skill in skills">
                                 <label class="flex items-center space-x-2">
@@ -103,7 +103,7 @@
                                     v-model="form.selectedSkills"
                                     class="form-checkbox h-5 w-5 text-indigo-600 border-gray-300 rounded"
                                 />
-                                <span :style="{ color: skill.color }">{{ skill.name }}</span>
+                                <span :style="{ color: skill.color }" class="text-white">{{ skill.name }}</span>
                                 <input
                                     type="color"
                                     :id="'color_' + skill.id"
@@ -113,7 +113,7 @@
                                 </label>
                             </template>
                         </div>
-                        <InputError class="mt-2" :message="form.errors.skill_id" />
+                        <InputError class="mt-2" :message="form.errors.selectedSkills" />
                     </div>
 
                     <div>

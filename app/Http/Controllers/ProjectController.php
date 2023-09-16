@@ -40,7 +40,7 @@ class ProjectController extends Controller
             'name' => ['required', 'min:3'],
             'skill_id' => ['required'],
             'project_url' => ['required', 'url'],
-            'description' => ['nullable', 'max:240']
+            'description' => ['nullable', 'max:240'],
         ]);
 
         if($request->hasFile('image')){ 
@@ -50,7 +50,8 @@ class ProjectController extends Controller
                 'name' => $request->name,
                 'image' => $image,
                 'project_url' => $request->project_url,
-                'description' => $request->description 
+                'description' => $request->description,
+                'selectedSkills' => $request->selectedSkills
             ]);
 
             return Redirect::route('projects.index')->with('message', 'Project Created Sucessfully');
@@ -85,7 +86,8 @@ class ProjectController extends Controller
         $request->validate([
             'name' => ['required', 'min:3'],
             'skill_id' => ['required'],
-            'description' => ['nullable', 'max:240']
+            'description' => ['nullable', 'max:240'],
+            'selectedSkills' => implode(', ', $request->selectedSkills)
         ]);
         if($request->hasFile('image')){
             Storage::delete($project->image);
@@ -97,7 +99,7 @@ class ProjectController extends Controller
             'skill_id' => $request-> skill_id,
             'project_url' => $request-> project_url,
             'image' => $image,
-            'description' => $request-> description
+            'selectedSkills' => implode(', ', $request->selectedSkills)
         ]);
 
         return Redirect::route('projects.index');
