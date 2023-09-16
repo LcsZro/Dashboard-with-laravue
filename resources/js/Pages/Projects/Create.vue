@@ -15,7 +15,9 @@
         image: null,
         skill_id: "",
         project_url: "",
-        description: ""
+        description: "",
+        selectedSkills: [],
+        selectedColor: ""
     });
 
     const submit = () => {
@@ -90,8 +92,32 @@
                     </div>
 
                     <div>
-                        <InputLabel for="image" value="Image" />
+                        <InputLabel for="skill_id" value="Skills" />
+                        <div class="mt-1 space-y-2">
+                            <template v-for="skill in skills">
+                                <label class="flex items-center space-x-2">
+                                <input
+                                    type="checkbox"
+                                    :id="'skill_' + skill.id"
+                                    :value="skill.id"
+                                    v-model="form.selectedSkills"
+                                    class="form-checkbox h-5 w-5 text-indigo-600 border-gray-300 rounded"
+                                />
+                                <span :style="{ color: skill.color }">{{ skill.name }}</span>
+                                <input
+                                    type="color"
+                                    :id="'color_' + skill.id"
+                                    v-model="skill.color"
+                                    @input="updateSkillColor(skill)"
+                                />
+                                </label>
+                            </template>
+                        </div>
+                        <InputError class="mt-2" :message="form.errors.skill_id" />
+                    </div>
 
+                    <div>
+                        <InputLabel for="image" value="Image" />
                         <TextInput
                             id="image"
                             type="file"

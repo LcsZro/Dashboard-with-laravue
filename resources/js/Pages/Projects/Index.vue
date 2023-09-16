@@ -46,6 +46,9 @@
                                 <th scope="col" class="px-6 py-3">
                                     Description
                                 </th>  
+                                <th scope="col" class="px-6 py-3">
+                                    Hashtags
+                                </th>  
                             </tr>
                         </thead>
                         <tbody>
@@ -63,9 +66,10 @@
                                    <img :src="project.image" class="w-12 h-12 rounded">
                                 </td>
                                 <td class="px-6 py-4">
-                                    <div id="outputText" class="p-2 rounded-lg">
-                                        {{ project.description }}
-                                    </div>
+                                   {{ project.description }}
+                                </td>
+                                <td class="px-6 py-4">
+                                   {{ project.hashtags }}
                                 </td>
                                 <td class="px-6 py-4">
                                     <Link 

@@ -21,8 +21,7 @@
         </a>
         <div class="text-sm">
           <p class="dark:text-white">
-            🕹 Customizable and 😍 accessible design system which provides
-            TailwindCSS component class name library to build modern UI. 💥
+            {{ project.description }}
           </p>
         </div>
         <div class="flex flex-wrap gap-2">
