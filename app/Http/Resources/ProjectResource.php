@@ -21,7 +21,8 @@ class ProjectResource extends JsonResource
             'skill' => new SkillResource($this->whenLoaded('skill')),
             'project_url' => $this->project_url,
             'description' => $this->description,
-            'selectedSkills' => $this->selectedSkills
+            'selectedSkills' => $this->selectedSkills,
+            'color' => $this->color
         ];
     }
 }

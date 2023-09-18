@@ -18,7 +18,7 @@
         skill_id: props.project?.skill_id,
         project_url: props.project?.project_url,
         description: props.project?.description,
-        selectedSkills: props.project?.selectedSkills
+        selectedSkills: props.project?.selectedSkills,
     });
 
     const submit = () => {
@@ -29,7 +29,7 @@
             skill_id: form.skill_id,
             project_url: form.project_url,
             description: form.description,
-            selectedSkills: form.selectedSkills
+            selectedSkills: form.selectedSkills,
         })
     };
 </script>

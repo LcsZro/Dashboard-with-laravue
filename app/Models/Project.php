@@ -9,10 +9,19 @@ class Project extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['skill_id', 'name', 'image', 'project_url', 'description', 'selectedSkills'];
+    protected $fillable = [
+        'skill_id', 
+        'name', 
+        'image', 
+        'project_url', 
+        'description', 
+        'selectedSkills', 
+        'color'
+    ];
 
     protected $casts = [
         'selectedSkills' => 'array',
+        'color' => 'array'
     ];
 
     public function skill()
