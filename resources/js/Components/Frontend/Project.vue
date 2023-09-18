@@ -26,7 +26,7 @@
           </p>
         </div>
         <div class="flex flex-wrap gap-2">
-          <span class="badge info bg-[#262534] dark:bg-white" v-for="(skill, index) in project.selectedSkills" :key="index">
+          <span class="badge info bg-[#3f3d56de] dark:bg-white" v-for="(skill, index) in project.selectedSkills" :key="index">
             <p :style="{ color: project.color[index] }">{{ skill }}</p>
           </span>
         </div>
