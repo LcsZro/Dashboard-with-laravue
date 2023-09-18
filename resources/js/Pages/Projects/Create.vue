@@ -95,25 +95,25 @@
 
                     <div>
                         <InputLabel for="selectedSkills" value="Hashtags" />
-                        <div class="mt-1 space-y-2">
-                        <template v-for="(skill, index) in skills">
-                            <label class="flex items-center space-x-2">
-                            <input
-                                type="checkbox"
-                                :id="'skill_' + skill.id"
-                                :value="skill.name"
-                                v-model="form.selectedSkills"
-                                class="form-checkbox h-5 w-5 text-indigo-600 border-gray-300 rounded"
-                            />
-                            <span :style="{ color: form.color[index] }" class="text-white">{{ skill.name }}</span>
-                            <input
-                                type="color"
-                                :id="'color_' + skill.id"
-                                v-model="form.color[index]"
-                            />
-                            </label>
-                        </template>
-                        </div>
+                            <div class="mt-1 space-y-2">
+                                <template v-for="(skill, index) in skills">
+                                    <label class="flex items-center space-x-2">
+                                        <input
+                                            type="checkbox"
+                                            :id="'skill_' + skill.id"
+                                            :value="skill.name"
+                                            v-model="form.selectedSkills"
+                                            class="form-checkbox h-5 w-5 text-indigo-600 border-gray-300 rounded"
+                                        />
+                                        <span :style="{ color: form.color[index] }" class="text-white">{{ skill.name }}</span>
+                                        <input
+                                            type="color"
+                                            :id="'color_' + skill.id"
+                                            v-model="form.color[index]"
+                                        />
+                                    </label>
+                                </template>
+                            </div>
                         <InputError class="mt-2" :message="form.errors.selectedSkills" />
                     </div>
 

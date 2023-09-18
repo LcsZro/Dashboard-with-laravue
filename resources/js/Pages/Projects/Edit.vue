@@ -101,7 +101,7 @@
                     <div>
                         <InputLabel for="selectedSkills" value="Hashtags" />
                         <div class="mt-1 space-y-2">
-                            <template v-for="skill in skills">
+                            <template v-for="(skill, index) in skills">
                                 <label class="flex items-center space-x-2">
                                     <input
                                         type="checkbox"
@@ -110,12 +110,11 @@
                                         v-model="form.selectedSkills"
                                         class="form-checkbox h-5 w-5 text-indigo-600 border-gray-300 rounded"
                                     />
-                                    <span :style="{ color: skill.color }" class="text-white">{{ skill.name }}</span>
+                                    <span :style="{ color: form.color[index] }" class="text-white">{{ skill.name }}</span>
                                     <input
                                         type="color"
                                         :id="'color_' + skill.id"
-                                        v-model="skill.color"
-                                        @input="updateSkillColor(skill)"
+                                        v-model="form.color[index]"
                                     />
                                 </label>
                             </template>
