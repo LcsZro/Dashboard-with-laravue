@@ -7,8 +7,13 @@ import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import { Link } from '@inertiajs/vue3';
 import DarkmodeButton from '../Components/Frontend/ButtonDarkmode.vue';
+import { useDark, useToggle } from '@vueuse/core'
 
 const showingNavigationDropdown = ref(false);
+
+const isDark = useDark()
+const toggleDark = useToggle(isDark)
+
 </script>
 
 <template>
@@ -108,8 +113,9 @@ const showingNavigationDropdown = ref(false);
                                         <DropdownLink :href="route('logout')" method="post" as="button">
                                             Log Out
                                         </DropdownLink>
-                                        <DropdownLink> 
-                                            <DarkmodeButton/>
+                                        <DropdownLink  @click="toggleDark()"> 
+                                            <p v-if="isDark" alt="Light">Light</p>
+                                            <p v-else alt="Dark">Dark</p>
                                         </DropdownLink>
                                     </template>
                                 </Dropdown>

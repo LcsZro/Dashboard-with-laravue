@@ -19,10 +19,11 @@
         project_url: props.project?.project_url,
         description: props.project?.description,
         selectedSkills: props.project?.selectedSkills,
+        color: props.project?.color,
     });
 
     const submit = () => {
-        Inertia.post(`/project/${props.project.id}`, {
+        Inertia.post(`/projects/${props.project.id}`, {
             _method: "put",
             name: form.name,
             image: form.image,
@@ -30,6 +31,7 @@
             project_url: form.project_url,
             description: form.description,
             selectedSkills: form.selectedSkills,
+            color: form.color
         })
     };
 </script>
