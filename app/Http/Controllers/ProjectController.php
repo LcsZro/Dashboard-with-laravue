@@ -85,12 +85,14 @@ class ProjectController extends Controller
     public function update(Request $request, Project $project)
     {
         $image = $project->image;
+            
         $request->validate([
             'name' => ['required', 'min:3'],
+            'image' => ['required', 'image'],
+            'project_url' => ['required', 'url'],
             'skill_id' => ['required'],
             'description' => ['nullable', 'max:240'],
-            'selectedSkills' => $request->selectedSkills,
-            'color' => $request->color
+            'color' => ['nullable'],
         ]);
         if($request->hasFile('image')){
             Storage::delete($project->image);
@@ -102,6 +104,8 @@ class ProjectController extends Controller
             'skill_id' => $request-> skill_id,
             'project_url' => $request-> project_url,
             'image' => $image,
+            'selectedSkills' => $request->selectedSkills,
+            'color' => $request->color
         ]);
 
         return Redirect::route('projects.index');
