@@ -11,41 +11,41 @@
                 </h2>
             </div>
         </div>
-        <div class="grid lg:grid-cols-3 gap-8 p-12">
-            <div class="p-6 bg-white rounded-2xl border-2 border-t-lime-500">
+        <div class="grid lg:grid-cols-3 gap-8 p-12 items-center justify-center">
+            <div class="p-6 rounded-2xl border-2 border-t-lime-500">
                 <div class="flex items-center justify-center">
-                    <img class="w-10" src="../Frontend/Img/palette.svg">  
+                    <img class="w-10 transform hover:origin-center hover:rotate-45 hover:transition-transform hover:duration-300" src="../Frontend/Img/responsive.svg">
                 </div>              
-                <div>
-                    <h4 class="text-xl text-[#2F2E41] font-medium mb-2">Web Design</h4>
-                    <p class="text-[#2F2E41]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsum quae totam libero accusantium iste illum excepturi culpa voluptas iusto doloribus debitis temporibus sit nobis minus!</p>
+                <div class="">
+                    <h4 class="text-xl font-medium mb-2  text-center">Web Design</h4>
+                    <p class="text-[#2F2E41] dark:text-white text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsum quae totam libero accusantium iste illum excepturi culpa voluptas iusto doloribus debitis temporibus sit nobis minus!</p>
                 </div>
             </div>
-            <div class="p-6 bg-white rounded-2xl border-2 border-t-lime-500">
+            <div class="p-6 bg-gray-950-800 rounded-2xl border-2 border-t-lime-500">
                 <div class="flex items-center justify-center">
-                    <img class="w-10" src="../Frontend/Img/responsive.svg">  
+                    <img class="w-10 transform hover:origin-center hover:rotate-45 hover:transition-transform hover:duration-300" src="../Frontend/Img/laptop.svg">  
                 </div>              
-                <div>
-                    <h4 class="text-xl text-[#2F2E41] font-medium mb-2">Web Design</h4>
-                    <p class="text-[#2F2E41]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsum quae totam libero accusantium iste illum excepturi culpa voluptas iusto doloribus debitis temporibus sit nobis minus!</p>
+                <div class="">
+                    <h4 class="text-xl font-medium mb-2  text-center">Web Design</h4>
+                    <p class="text-[#2F2E41] dark:text-white text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsum quae totam libero accusantium iste illum excepturi culpa voluptas iusto doloribus debitis temporibus sit nobis minus!</p>
                 </div>
             </div>
-            <div class="p-6 bg-white rounded-2xl border-2 border-t-lime-500">
+            <div class="p-6 bg-gray-950-800 rounded-2xl border-2 border-t-lime-500">
                 <div class="flex items-center justify-center">
-                    <img class="w-10" src="../Frontend/Img/laptop.svg">  
+                    <img class="w-10 transform hover:origin-center hover:rotate-45 hover:transition-transform hover:duration-300" src="../Frontend/Img/palette.svg">  
                 </div>              
-                <div>
-                    <h4 class="text-xl text-[#2F2E41] font-medium mb-2">Web Design</h4>
-                    <p class="text-[#2F2E41]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsum quae totam libero accusantium iste illum excepturi culpa voluptas iusto doloribus debitis temporibus sit nobis minus!</p>
+                <div class="">
+                    <h4 class="text-xl font-medium mb-2  text-center">Web Design</h4>
+                    <p class="text-[#2F2E41] dark:text-white text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsum quae totam libero accusantium iste illum excepturi culpa voluptas iusto doloribus debitis temporibus sit nobis minus!</p>
                 </div>
             </div>
-            <div class="p-6 bg-white rounded-2xl border-2 border-t-lime-500">
+              <div class="p-6 bg-gray-950-800 rounded-2xl border-2 border-t-lime-500">
                 <div class="flex items-center justify-center">
-                    <img class="w-10" src="../Frontend/Img/laptop.svg">  
+                    <img class="w-10 transform hover:origin-center hover:rotate-45 hover:transition-transform hover:duration-300" src="../Frontend/Img/seo-line.svg">  
                 </div>              
-                <div>
-                    <h4 class="text-xl text-[#2F2E41] font-medium mb-2">Web Design</h4>
-                    <p class="text-[#2F2E41]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsum quae totam libero accusantium iste illum excepturi culpa voluptas iusto doloribus debitis temporibus sit nobis minus!</p>
+                <div class="">
+                    <h4 class="text-xl font-medium mb-2  text-center">Web Design</h4>
+                    <p class="text-[#2F2E41] dark:text-white text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsum quae totam libero accusantium iste illum excepturi culpa voluptas iusto doloribus debitis temporibus sit nobis minus!</p>
                 </div>
             </div>
         </div>
