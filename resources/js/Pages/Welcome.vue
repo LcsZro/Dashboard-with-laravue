@@ -4,6 +4,7 @@ import FrontendLayout from '@/Layouts/Frontend.vue';
 import Hero from '@/Components/Frontend/Hero.vue';
 import Skills from '@/Components/Frontend/Skills.vue';
 import Projects from '@/Components/Frontend/Projects.vue';
+import Services from '@/Components/Frontend/Services.vue'
 
 defineProps({
     skills: Object,
@@ -19,6 +20,7 @@ defineProps({
             <About/>
             <Skills :skills="skills" />
             <Projects :skills="skills" :projects="projects" />
+            <Services />
         </FrontendLayout>
     </html>
 </template>
