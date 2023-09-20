@@ -17,7 +17,7 @@
                     <img class="w-10 transform hover:origin-center hover:rotate-45 hover:transition-transform hover:duration-300" src="../Frontend/Img/responsive.svg">
                 </div>              
                 <div class="">
-                    <h4 class="text-xl font-medium mb-2  text-center">Web Design</h4>
+                    <h4 class="text-xl font-medium mb-2 text-center">Web Design</h4>
                     <p class="text-[#2F2E41] dark:text-white text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsum quae totam libero accusantium iste illum excepturi culpa voluptas iusto doloribus debitis temporibus sit nobis minus!</p>
                 </div>
             </div>

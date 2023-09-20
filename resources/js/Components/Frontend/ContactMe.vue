@@ -1,3 +1,33 @@
+<script setup>
+import { ref } from 'vue';
+import { useForm } from '@inertiajs/vue3'
+
+const showMessage = ref(false);
+
+const form = useForm({
+    name: "",
+    email:"",
+    body: ""
+});
+
+function setShowMessage(value){
+    showMessage.value = value;
+}
+
+function cleanForm(){
+    form.reset();
+    setShowMessage(true);
+    setTimeout(() => setShowMessage(false), 2000);
+}
+
+const submit = () => {
+    form.post(route("contact"),{
+        preserveScroll: true,
+        onSuccess: () => cleanForm(),
+    });
+}
+</script>
+
 <template>
     <section class="py-16">
         <div class="container mx-auto text-center">
@@ -14,23 +44,29 @@
                         <p class="text-gray-600">I am here to help you</p>
                     </div>
                 </div>
-                <p class="text-green-500">Email me at random@gmail.com</p>
+                <p class="text-[#68B42D]">Email me at random@gmail.com</p>
             </div>
-            <form class="w-full max-w-md">
+            <form @submit.prevent="submit" class="w-full max-w-md">
+                <div v-if="showMessage" class="m-2 p-4 bg-teal-200 rounded-lg">
+                    Thank you for contacting me.
+                </div>
                 <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
                     <div class="flex-1">
-                        <input type="text" class="w-full border p-2 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Your Name">
-                        <span class="text-red-500 text-sm m-2">Error</span> 
+                        <input v-model="form.name" type="text" class="w-full border p-2 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Your Name">
+                        <span v-if="form.errors.name" class="text-red-500 text-sm m-2">{{ form.errors.name }}</span> 
                     </div>
                     <div class="flex-1">
-                        <input type="email" class="w-full border p-2 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Your Email">   
-                        <span class="text-red-500 text-sm m-2">Error</span>              
+                        <input v-model="form.email" type="email" class="w-full border p-2 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Your Email">   
+                        <span v-if="form.errors.name" class="text-red-500 text-sm m-2">{{ form.errors.email }}</span>              
                     </div>
                 </div>
                 <div class="mt-4">
-                    <textarea class="w-full border p-2 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Your Message" spellcheck="false"></textarea>
-                    <span class="text-red-500 text-sm m-2">Error</span>
+                    <textarea v-model="form.body" class="w-full border p-2 pb-28 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Your Message" spellcheck="false"></textarea>
+                    <span v-if="form.errors.email" class="text-red-500 text-sm m-2">{{ form.errors.email }}</span>
                 </div>
+                <button class="bg-[#68B42D] hover:bg-[#68b42de8] text-white font-bold py-2 px-4 rounded meu-botao">
+                    Send Message
+                </button>
             </form>
         </div>
     </section>
