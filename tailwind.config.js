@@ -16,7 +16,7 @@ export default {
     theme: {
       fontFamily:{
         primary: "Playfair Display",
-        body: "work Sans"
+        body: "Inter"
       },
       container:{
         padding: {

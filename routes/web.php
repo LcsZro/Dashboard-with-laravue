@@ -18,7 +18,11 @@ use Inertia\Inertia;
 
 Route::get('/', [\App\Http\Controllers\WelcomeController::class, 'welcome'])->name('welcome');
 
-Route::middleware(['auth', 'verified'])->group(function(){
+Route::get('/teste', function(){
+    return inertia('Teste');
+});
+
+Route::middleware(['auth', 'verified'])->group(function(){  
     Route::get('/dashboard', function(){
         return Inertia::render('Dashboard');
     })->name('dashboard');
