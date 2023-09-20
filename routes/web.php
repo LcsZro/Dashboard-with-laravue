@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,7 @@ use Inertia\Inertia;
 */
 
 Route::get('/', [\App\Http\Controllers\WelcomeController::class, 'welcome'])->name('welcome');
+Route::post('/contact',\App\Http\Controllers\ContactController::class)->name('contact');
 
 Route::get('/teste', function(){
     return inertia('Teste');

@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-white dark:bg-[#121212]">
+    <section>
         <div class="flex justify-center mt-8 space-x-6 pt-4">
             <a href="#" class="text-gray-400 hover:text-gray-500">
                 <span class="sr-only">Facebook</span>
