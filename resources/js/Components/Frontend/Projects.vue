@@ -20,7 +20,7 @@
       filteredProjects.value = props.projects.data.filter(project => {
         return project.skill.id === id;
       });
-      filteredProjectId.value = id; // Define o id do filtro aplicado
+      filteredProjectId.value = id; 
     }
   }
   

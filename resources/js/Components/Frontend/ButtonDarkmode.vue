@@ -7,7 +7,7 @@
 
 <template>
     <button @click="toggleDark()">
-        <img v-if="isDark" src="../Frontend/Img/newmoon.svg" alt="Dark Image" class="w-6"/>
+        <img v-if="isDark" src="../Frontend/Img/moon.svg" alt="Dark Image" class="w-6"/>
         <img v-else src="../Frontend/Img/sun.svg" alt="Light Image" class="w-6"/>
     </button>
 </template>

@@ -20,10 +20,6 @@ use Illuminate\Http\Request;
 Route::get('/', [\App\Http\Controllers\WelcomeController::class, 'welcome'])->name('welcome');
 Route::post('/contact',\App\Http\Controllers\ContactController::class)->name('contact');
 
-Route::get('/teste', function(){
-    return inertia('Teste');
-});
-
 Route::middleware(['auth', 'verified'])->group(function(){  
     Route::get('/dashboard', function(){
         return Inertia::render('Dashboard');
