@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import { useForm } from '@inertiajs/vue3'
+import { MotionPlugin } from '@vueuse/motion'
 
 const showMessage = ref(false);
 
@@ -29,7 +30,18 @@ const submit = () => {
 </script>
 
 <template>
-    <section class="py-16">
+    <section id="contact" class="py-16">
+        <div
+            v-motion
+            :initial="{
+                opacity: 0,
+                y: 100,
+            }"
+            :visible="{
+                opacity: 1,
+                y: 0,
+            }"
+        />
         <div class="container mx-auto text-center">
             <h2 class="text-4xl md:text-6xl mb-8">Contact Me</h2>
         </div>

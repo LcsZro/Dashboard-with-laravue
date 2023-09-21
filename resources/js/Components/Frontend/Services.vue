@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <section class="section">
+    <section id="services" class="section">
         <div class="container mx-auto">
             <div class="flex flex-col items-center text-center">
                 <h2 class="text-6xl p-12">

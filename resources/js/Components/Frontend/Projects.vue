@@ -30,7 +30,7 @@
 </script>
 
 <template>
-    <section id="portfolio">
+    <section id="projects">
       <div class="container mx-auto">
         <div class="flex flex-col items-center text-center">
           <h1 class="text-6xl m-10">My last projects</h1>

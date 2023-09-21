@@ -1,12 +1,19 @@
 <script setup>
-    import { ref } from 'vue';
-    import DarkmodeButton from '../Frontend/ButtonDarkmode.vue' 
+import { ref } from 'vue';
+import DarkmodeButton from '../Frontend/ButtonDarkmode.vue' 
 
-    const showMobileMenu = ref(false);
- 
-    const toggleMobileMenu = () => {
-        showMobileMenu.value = !showMobileMenu.value;
-    }
+const showMobileMenu = ref(false);
+
+const toggleMobileMenu = () => {
+    showMobileMenu.value = !showMobileMenu.value;
+}
+
+const navigations = [
+    { name: "Home", href: "#home" },
+    { name: "Services", href: "#services" },
+    { name: "Projects", href: "#projects" }, 
+    { name: "Contact", href: "#contact" },   
+]
 </script>
  
 <template> 
@@ -21,21 +28,10 @@
         </div>
         <div class="w-full lg:flex lg:items-center lg:w-auto" :class="{ 'hidden': !showMobileMenu }">
             <div class="text-lg lg:flex-grow text-[#68B42D]">
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 dark:hover:text-white hover:text-slate-700 mr-4">
-                    Home
+                <a :href="navigation.href" v-for="(navigation, index) in navigations" class="block mt-4 lg:inline-block lg:mt-0 dark:hover:text-white hover:text-slate-700 mr-4">
+                   {{ navigation.name }}
                 </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 dark:hover:text-white hover:text-slate-700 mr-4">
-                    About
-                </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 dark:hover:text-white hover:text-slate-700 mr-4">
-                    Services
-                </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 dark:hover:text-white hover:text-slate-700 mr-4">
-                    Projects
-                </a>
-                <a href="#responsive-header" class="">
-                    <DarkmodeButton/>
-                </a>
+                <DarkmodeButton/>
             </div>
         </div>
     </nav>
