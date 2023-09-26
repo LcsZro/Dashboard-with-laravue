@@ -41,9 +41,10 @@ class ProjectController extends Controller
             'skill_id' => ['required'],
             'project_url' => ['required', 'url'],
             'description' => ['nullable', 'max:240'],
-            'color' => ['nullable'],
-        ]);
+            'color' => ['nullable','array'],
 
+        ]);
+        
         if($request->hasFile('image')){ 
             $image = $request->file('image')->store('projects');
             Project::create([
@@ -92,7 +93,7 @@ class ProjectController extends Controller
             'project_url' => ['required', 'url'],
             'skill_id' => ['required'],
             'description' => ['nullable', 'max:240'],
-            'color' => ['nullable'],
+            'color' => ['nullable','array'],
         ]);
         if($request->hasFile('image')){
             Storage::delete($project->image);
