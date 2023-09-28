@@ -20,8 +20,8 @@ export default defineConfig({
     build: {
         rollupOptions: {
             output: {
-                manifest: 'public/build/manifest.json',
+                manifest: 'public/build/manifest.json', 
             },
         },
-    },    
+    },
 });
