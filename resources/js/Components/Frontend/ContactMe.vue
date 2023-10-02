@@ -44,7 +44,7 @@ const submit = () => {
                         <p class="text-gray-600">I am here to help you</p>
                     </div>
                 </div>
-                <p class="text-[#68B42D]">Email me at random@gmail.com</p>
+                <p class="text-[#68B42D]">Email me at lucascerqueira.git@gmail.com</p>
             </div>
             <form @submit.prevent="submit" class="w-full max-w-md">
                 <div v-if="showMessage" class="m-2 p-4 bg-teal-200 rounded-lg">
