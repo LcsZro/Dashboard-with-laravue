@@ -19,7 +19,7 @@ const navigations = [
 <template> 
     <nav class="flex items-start justify-between flex-wrap p-6">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <img class="w-24 h-21 md:ml-12" src="https://a.storyblok.com/f/248205/440x250/8c8b00c03a/logo.png/m/250x0?cv=1694461402429">
+            <img class="w-24 h-21 md:ml-12" src="../Frontend/Img/250x0.webp">
         </div>
         <div class="block lg:hidden">
             <button class="flex items-center px-3 py-2 border rounded text-xl text-white border-[#68B42D] hover:text-white hover:border-white" @click="toggleMobileMenu">
