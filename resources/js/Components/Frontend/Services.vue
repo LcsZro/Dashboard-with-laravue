@@ -14,7 +14,7 @@
         <div class="grid lg:grid-cols-3 gap-8 p-12 items-center justify-center">
             <div class="p-6 rounded-2xl border-2 border-t-lime-500">
                 <div class="flex items-center justify-center">
-                    <img class="w-10 " src="../Frontend/Img/responsive.svg">
+                    <img class="w-10 " src="../Frontend/Img/responsive.svg" alt="responsive">
                 </div>              
                 <div class="">
                     <h4 class="text-xl font-medium mb-2 text-center">Web Design</h4>
@@ -23,7 +23,7 @@
             </div>
             <div class="p-6 bg-gray-950-800 rounded-2xl border-2 border-t-lime-500">
                 <div class="flex items-center justify-center">
-                    <img class="w-10 " src="../Frontend/Img/laptop.svg">  
+                    <img class="w-10 " src="../Frontend/Img/laptop.svg" alt="frontend">  
                 </div>              
                 <div class="">
                     <h4 class="text-xl font-medium mb-2  text-center">Web Design</h4>
@@ -32,7 +32,7 @@
             </div>
             <div class="p-6 bg-gray-950-800 rounded-2xl border-2 border-t-lime-500">
                 <div class="flex items-center justify-center">
-                    <img class="w-10 " src="../Frontend/Img/palette.svg">  
+                    <img class="w-10 " src="../Frontend/Img/palette.svg" alt="palette">  
                 </div>              
                 <div class="">
                     <h4 class="text-xl font-medium mb-2  text-center">Web Design</h4>
@@ -41,7 +41,7 @@
             </div>
               <div class="p-6 bg-gray-950-800 rounded-2xl border-2 border-t-lime-500">
                 <div class="flex items-center justify-center">
-                    <img class="w-10 " src="../Frontend/Img/seo-line.svg">  
+                    <img class="w-10 " src="../Frontend/Img/seo-line.svg" alt="SEO">  
                 </div>              
                 <div class="">
                     <h4 class="text-xl font-medium mb-2 text-center">Web Design</h4>
