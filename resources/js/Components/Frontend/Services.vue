@@ -18,7 +18,7 @@
                 </div>              
                 <div class="">
                     <h4 class="text-xl font-medium mb-2 text-center">Responsive Design</h4>
-                    <p class="text-[#2F2E41] dark:text-white text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsum quae totam libero accusantium iste illum excepturi culpa voluptas iusto doloribus debitis temporibus sit nobis minus!</p>
+                    <p class="text-[#2F2E41] dark:text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                 </div>
             </div>
             <div class="p-6 bg-gray-950-800 rounded-2xl border-2 border-t-lime-500">
@@ -27,7 +27,7 @@
                 </div>              
                 <div class="">
                     <h4 class="text-xl font-medium mb-2  text-center">Web Development</h4>
-                    <p class="text-[#2F2E41] dark:text-white text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsum quae totam libero accusantium iste illum excepturi culpa voluptas iusto doloribus debitis temporibus sit nobis minus!</p>
+                    <p class="text-[#2F2E41] dark:text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                 </div>
             </div>
             <div class="p-6 bg-gray-950-800 rounded-2xl border-2 border-t-lime-500">
@@ -36,7 +36,7 @@
                 </div>              
                 <div class="">
                     <h4 class="text-xl font-medium mb-2  text-center">Web Design</h4>
-                    <p class="text-[#2F2E41] dark:text-white text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsum quae totam libero accusantium iste illum excepturi culpa voluptas iusto doloribus debitis temporibus sit nobis minus!</p>
+                    <p class="text-[#2F2E41] dark:text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                 </div>
             </div>
               <div class="p-6 bg-gray-950-800 rounded-2xl border-2 border-t-lime-500">
@@ -45,7 +45,7 @@
                 </div>              
                 <div class="">
                     <h4 class="text-xl font-medium mb-2 text-center">SEO</h4>
-                    <p class="text-[#2F2E41] dark:text-white text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsum quae totam libero accusantium iste illum excepturi culpa voluptas iusto doloribus debitis temporibus sit nobis minus!</p>
+                    <p class="text-[#2F2E41] dark:text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                 </div>
             </div>
         </div>
