@@ -23,12 +23,15 @@
     h3,
     h5,
     h6 {
-        @apply text-slate-900 dark:text-white;
+        @apply text-[#3F3D56] dark:text-white;
     }
     h4{
         @apply text-[#68B42D] dark:text-white;
     }
     .active{
         @apply text-accent;
+    }
+    .footer-content{
+        @apply text-[#2F2E41] hover:text-[#3F3D56] dark:text-white dark:hover:text-slate-300
     }
 }
