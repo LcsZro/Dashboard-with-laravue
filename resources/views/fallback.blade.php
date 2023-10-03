@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com" rel="stylesheet"></script>
 </head>
 <body>
     <div class="grid min-h-full place-items-center px-6 py-24 sm:py-32 lg:px-8">
