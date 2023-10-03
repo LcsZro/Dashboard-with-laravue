@@ -23,5 +23,6 @@ export default defineConfig({
                 manifest: 'public/build/manifest.json', 
             },
         },
+        manualChunks: { 'css/app.css': ['resources/css/app.css'] },
     },
 });
