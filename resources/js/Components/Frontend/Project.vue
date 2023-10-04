@@ -27,7 +27,7 @@
         </div>
         <div class="flex flex-wrap gap-2">
           <span class="badge bg-zinc-700 dark:bg-[#1B1B1B]" v-for="(skill, index) in project.selectedSkills" :key="index">
-            <p :style="{ color: project.color[index] }">{{ skill }}</p>
+            <p v-if="project.color && project.color[index]" :style="{ color: project.color[index] }">{{ skill }}</p>
           </span>
         </div>
       </div>
