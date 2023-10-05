@@ -18,11 +18,6 @@ export default defineConfig({
         }),
     ],
     build: {
-        rollupOptions: {
-            output: {
-                manifest: 'public/build/manifest.json', 
-            },
-        },
-        manualChunks: { 'css/app.css': ['resources/css/app.css'] },
+        outDir: 'public/build',
     },
 });
