@@ -11,8 +11,7 @@ export default defineConfig({
         vue({
             template: {
                 transformAssetUrls: {
-                    // Defina todas as propriedades como true para forçar URLs absolutas com HTTPS
-                    base: true,
+                    base: null,
                     includeAbsolute: true,
                 },
             },
@@ -20,5 +19,7 @@ export default defineConfig({
     ],
     build: {
         outDir: 'public/build',
+        assetsDir: '', // This should be empty
     },
+    base: '/build/', // Add this line
 });
