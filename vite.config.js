@@ -11,15 +11,13 @@ export default defineConfig({
         vue({
             template: {
                 transformAssetUrls: {
-                    base: null,
-                    includeAbsolute: true,
+                    base: '', // Deixe em branco para usar URLs relativas
                 },
             },
         }),
     ],
     build: {
         outDir: 'public/build',
-        assetsDir: '', // This should be empty
+        assetsDir: '', // Deixe em branco para usar URLs relativas
     },
-    base: '/build/', // Add this line
 });
