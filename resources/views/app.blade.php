@@ -6,6 +6,7 @@
 
         <title inertia>{{ config('app.name', 'Laravel') }}</title>
         <!-- Fonts -->
+        <link rel="stylesheet" href="https://portfolio-production-f53d.up.railway.app/build/assets/app-896edaca.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -17,4 +18,5 @@
     <body class="!font-body">
         @inertia    
     </body>
+    <script src="https://portfolio-production-f53d.up.railway.app/build/assets/app-9a77d02b.js"></script>
 </html>
