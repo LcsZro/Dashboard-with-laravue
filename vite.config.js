@@ -20,4 +20,8 @@ export default defineConfig({
     build: {
         outDir: 'public/build',
     },
+    // Adicione a configuração para gerar o manifest.json
+    build: {
+        manifest: true,
+    },
 });
