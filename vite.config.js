@@ -18,8 +18,6 @@ export default defineConfig({
         }), 
     ],
     build: {
-        output: {
-            manifest: 'public/build/manifest.json',
-        },
-    },
+        outDir: 'public/build',
+    }, 
 });
