@@ -10,10 +10,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-        <link rel="stylesheet" type="text/css" href="https://portfolio-production-76d2.up.railway.app/build/assets/app-896edaca.css">
-        <script src="https://portfolio-production-76d2.up.railway.app/build/assets/app-9a77d02b.js"></script>
-        <script src="https://portfolio-production-76d2.up.railway.app/build/assets/_plugin-vue_export-helper-c27b6911.js"></script>
-        <script src="https://portfolio-production-76d2.up.railway.app/build/assets/Welcome-6a9e658b.js"></script>
         <!-- Scripts -->
         @routes
         @vite(['resources/js/app.js', "resources/js/Pages/{$page['component']}.vue"])
