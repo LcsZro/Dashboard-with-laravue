@@ -9,7 +9,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <link src="/public/build/assets/app-896edaca.css">
         <!-- Scripts -->
+        <script src="/public/build/assets/app-7cd04fec.js"></script>
         @routes
         @vite(['resources/js/app.js', "resources/js/Pages/{$page['component']}.vue"])
         @inertiaHead
