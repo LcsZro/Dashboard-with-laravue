@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Redirect;
 use App\Models\Skill;
-use App\Models\Project; 
+use App\Models\Project;
 use App\Http\Resources\ProjectResource;
 use Illuminate\Support\Facades\Storage;
 
@@ -42,11 +42,11 @@ class ProjectController extends Controller
             'project_url' => ['required', 'url'],
             'description' => ['nullable', 'max:240'],
             'color' => ['nullable','array'],
-
         ]);
-        
-        if($request->hasFile('image')){ 
-            $image = $request->file('image')->store('projects');
+
+        if($request->hasFile('image')){
+            $image = $request->file('image')->store('projects', 'public');
+
             Project::create([
                 'skill_id' => $request->skill_id,
                 'name' => $request->name,
@@ -57,9 +57,9 @@ class ProjectController extends Controller
                 'color' => $request->color
             ]);
 
-            return Redirect::route('projects.index')->with('message', 'Project Created Sucessfully');
+            return Redirect::route('projects.index')->with('message', 'Project Created Successfully');
         }
-        
+
         return Redirect::back();
     }
 
@@ -68,7 +68,7 @@ class ProjectController extends Controller
      */
     public function show(string $id)
     {
-        //
+        // Your implementation here
     }
 
     /**
@@ -86,7 +86,7 @@ class ProjectController extends Controller
     public function update(Request $request, Project $project)
     {
         $image = $project->image;
-            
+
         $request->validate([
             'name' => ['required', 'min:3'],
             'image' => ['required', 'image'],
@@ -95,15 +95,16 @@ class ProjectController extends Controller
             'description' => ['nullable', 'max:240'],
             'color' => ['nullable','array'],
         ]);
+
         if($request->hasFile('image')){
             Storage::delete($project->image);
-            $image = $request->file('image')->store('projects');
+            $image = $request->file('image')->store('projects', 'public');
         }
 
         $project->update([
-            'name' => $request-> name,
-            'skill_id' => $request-> skill_id,
-            'project_url' => $request-> project_url,
+            'name' => $request->name,
+            'skill_id' => $request->skill_id,
+            'project_url' => $request->project_url,
             'image' => $image,
             'selectedSkills' => $request->selectedSkills,
             'color' => $request->color
@@ -119,6 +120,7 @@ class ProjectController extends Controller
     {
         Storage::delete($project->image);
         $project->delete();
+
         return Redirect::back();
     }
 }

@@ -9,7 +9,6 @@ use App\Models\Skill;
 use App\Http\Resources\SkillResource;
 use Illuminate\Support\Facades\Storage;
 
-
 class SkillController extends Controller
 {
     /**
@@ -40,7 +39,7 @@ class SkillController extends Controller
         ]);
 
         if($request->hasFile('image')){
-            $image = $request->file('image')->store('skills');
+            $image = $request->file('image')->store('skills', 'public');
 
             Skill::create([
                 'name' => $request->name,
@@ -81,7 +80,7 @@ class SkillController extends Controller
 
         if($request->hasFile('image')){
             Storage::delete($skill->image); 
-            $image = $request->file('image')->store('skills');
+            $image = $request->file('image')->store('skills', 'public');
         }
 
         $skill->update([
