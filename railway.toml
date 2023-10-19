@@ -1,3 +1,0 @@
-command = "composer install && php artisan storage:link"
-
-storage_directory = "storage/app/public"
