@@ -12,7 +12,6 @@
   const filteredProjectId = ref(null);
   
   const filterProjects = (id) => {
-    console.log('Filtering projects with skill id:', id);
     if (id === "all") {
       filteredProjects.value = props.projects.data;
       filteredProjectId.value = null; 
